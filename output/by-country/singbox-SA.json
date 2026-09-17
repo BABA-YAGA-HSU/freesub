@@ -16,7 +16,6 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/m?ed=2560fp=chrome",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }

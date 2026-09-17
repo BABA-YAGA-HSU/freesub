@@ -15,7 +15,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /m?ed=2560fp=chrome
+    path: /
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
