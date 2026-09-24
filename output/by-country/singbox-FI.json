@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "assets-fi.pleiades.codes",
+      "server": "2.27.175.71",
       "server_port": 443,
       "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
       "tls": {
@@ -24,15 +24,20 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "iq5ny.pleiades.codes",
-      "server_port": 8443,
-      "password": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+      "server": "193.23.201.65",
+      "server_port": 5432,
+      "uuid": "e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "iq5ny.pleiades.codes",
-        "insecure": true
+        "server_name": "193.23.201.65",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
       }
     },
     {
@@ -56,12 +61,16 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-      "server": "p1tun3.greewebservices.ir",
-      "server_port": 2070,
-      "method": "chacha20-ietf-poly1305",
-      "password": "LMnotcv4RdaEOBXT-LdtfA"
+      "server": "iq5ny.pleiades.codes",
+      "server_port": 8443,
+      "password": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+      "tls": {
+        "enabled": true,
+        "server_name": "iq5ny.pleiades.codes",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
