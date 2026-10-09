@@ -30,20 +30,6 @@ proxies:
     short-id: 54cca3c1c1c7
   servername: www.apple.com
   client-fingerprint: ios
-- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  server: 104.18.42.98
-  port: 2083
-  udp: true
-  type: vless
-  uuid: f959a3fc-2e55-4bde-8ed4-4fab249f8733
-  tls: true
-  servername: krhome.388998.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /hinet02799989xyz
-    headers:
-      Host: krhome.388998.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
